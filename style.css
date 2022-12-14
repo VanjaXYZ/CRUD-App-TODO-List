@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.todo-app {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.todo-input {
+  padding: 12px;
+}
+
+.todo-input input {
+  font-size: 2rem;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid black;
+  outline: none;
+}
+.todo-input button {
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.todo-input button:active {
+  translate: 0 1px;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* ****************NEW TODO********************************** */
+.todo {
+  width: 550px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  margin: 6px;
+  box-shadow: 1px 2px 4px black;
+}
+
+.todo div.todo-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px;
+  font-size: 1.2rem;
+}
+
+.todo-text {
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  width: 430px;
+  cursor: default;
+}
+
+.todo div button.delete-button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.todo div button:active {
+  translate: 0px 1px;
+}
+.todo div button.edit-button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 5px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.todo div button.edit-button:hover {
+  background-color: #151515;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.1s ease-in-out;
+}
+
+.todo-buttons {
+  margin-left: auto;
+}
+
+/* ******************************************************************
+************************************************************************** */
+
+/* *********REMOVE TODO EFFECT********** */
+
+.remove-todo {
+  translate: -400px 0;
+  opacity: 0;
+  transition: translate 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
